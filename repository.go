@@ -116,9 +116,9 @@ func setWorktreeAndStoragePaths(r *Repository, worktree billy.Filesystem) error 
 		return nil
 	}
 
-	if err := createDotGitFile(worktree, fs.Filesystem()); err != nil {
-		return err
-	}
+	//if err := createDotGitFile(worktree, fs.Filesystem()); err != nil {
+	//	return err
+	//}
 
 	return setConfigWorktree(r, worktree, fs.Filesystem())
 }
